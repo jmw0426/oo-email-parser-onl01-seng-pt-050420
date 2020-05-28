@@ -8,8 +8,9 @@ class EmailParser
   def parse(addresses)
     parsed = addresses.gsub(", ", " ").split(" ") 
     @emails << parsed
-  end
     @emails
+  end
+  
 end
 # Build a class EmailParser that accepts a string of unformatted 
 # emails. The parse method on the class should separate them into
