@@ -6,8 +6,8 @@ class EmailAddressParser
     @emails = emails
   end
   
-  def parse(addresses)
-    parsed = addresses.gsub(", ", " ").split(" ") 
+  def parse(emails)
+    parsed = emails.gsub(", ", " ").split(" ") 
     @email_list << parsed
     @email_list
   end
