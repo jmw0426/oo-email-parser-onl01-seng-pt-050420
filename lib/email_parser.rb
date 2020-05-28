@@ -6,6 +6,7 @@ class EmailParser
   end
   
   def parse(addresses)
+    addresses.chomp(", ").split(" ")
     
   end
 
