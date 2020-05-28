@@ -7,7 +7,7 @@ class EmailAddressParser
   end
   
   def parse
-    parsed = emails.gsub(", ", " ").split(" ") 
+    parsed = @emails.gsub(", ", " ").split(" ") 
     parsed.each do |email| 
       string = email.to_s
       @email_list << string
