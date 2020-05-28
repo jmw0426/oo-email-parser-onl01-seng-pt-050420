@@ -12,7 +12,7 @@ class EmailAddressParser
       string = email.to_s
       @email_list << string
     end
-    @email_list
+    @email_list.uniq
   end
   
 end
